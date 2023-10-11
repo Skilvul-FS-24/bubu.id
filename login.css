@@ -18,4 +18,14 @@ body {
     .login-fitur p{
         font-size: 12px;
     }
+    #login {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 850px){
+    
+    #login img{
+        width: 200px;
+    }
 }
