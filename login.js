@@ -12,18 +12,22 @@ btnSubmit.addEventListener("click", async (event) => {
         let users = await respons.json()
     
         let popup = `
-        <div class="alert alert-danger" role="alert">
+        <div class="alert alert-danger align-items-lg-center" role="alert">
             Email atau password salah !
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         `;
-    
-        users.find((user, index) => {
-            if (emailUser.value === user.email && passwordUser.value === user.password){ 
-                window.location.href = "index.html"
-            }else{
-                return alert.innerHTML += popup
-            }
-        })
+
+        let found = users.find((user) => {
+            return emailUser.value === user.email && passwordUser.value === user.password;
+        });
+
+        if (found) {
+            window.location.href = "landing-page.html"
+            localStorage.setItem("token", found.id)
+        }else {
+            return alert.innerHTML += popup
+        }
     }
 
     getUsers()
