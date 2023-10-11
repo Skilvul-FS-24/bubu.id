@@ -1,0 +1,23 @@
+body {
+    font-family: 'Poppins' !important;
+    background-color: #54BAB9 !important;
+}
+
+form .form-label {
+    font-weight: bold;
+}
+
+
+@media (max-width: 575.98px) { 
+
+    .register-fitur p{
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 1199.98px) { 
+    #registrasi {
+        width: 100% !important;
+    }
+}
