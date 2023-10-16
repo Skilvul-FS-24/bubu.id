@@ -1,0 +1,679 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    position: relative;
+    background: var(--Primary, #54BAB9);
+}
+
+/* Navigasi Bar */
+.logo{
+    position: relative;
+    width: 200px;
+    height: auto;
+    background: var(--Primary, #54BAB9);
+    
+}
+.navbar {
+    background: var(--Primary, #54BAB9);
+    width: auto;
+    height: 100px; 
+    flex-shrink: 0;
+    color: #FAF9F9;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    padding: 0.6em;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 60px;      
+    position: relative;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    background-color: #224F34;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 30px;
+    position: static;
+    margin: -10px;
+}
+
+.iconppl{
+    position: relative;
+}
+
+#isi{
+    background-color: rgb(217, 217, 217, 0.25);
+    margin: 20px 250px;
+    margin-top: 80px;
+    height: 1500px;
+}
+
+.container {
+    width: auto;
+    text-align: center;
+    position: relative;
+    top: 200px;
+
+}
+  
+h1 {
+    text-align: start;
+    padding-left: 80px;
+    font-size: 42px;
+    position: relative;
+    top: 30px;
+}
+
+.col-3 {
+    text-align: start;
+    padding: 20px 80px;
+    font-size: 20px;
+    font-style: bold;
+    margin-top: -120px;
+}
+
+.col-sm-9 {
+    text-align: start;
+    padding: 15px 0px;
+    font-size: 14px;
+   
+}
+
+.cta-button {
+    position: relative;
+    display: inline;
+    padding: 8px 16px;
+    font-size: 12px;
+    left: -420px;
+    text-decoration: none;
+    color: #224F34;
+    background-color: rgb(217, 217, 217,);
+    border-radius: 20px;
+    border: 1px solid; 
+    border-color: #224F34; 
+}
+
+.btn-more {
+    position: relative;
+    display: inline;
+    padding: 8px 16px;
+    font-size: 12px;
+    left: -260px;
+    top: 100px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #224F34;
+    border-radius: 20px;
+    border: 1px solid; 
+    border-color: #224F34; 
+}
+
+.img-artikel {
+    position: relative;
+    left: 750px;
+    top: -10px;
+    border-radius: 40px;
+}
+
+#footers{
+    display: flex;
+    gap: 100px;
+}
+
+#social-media h4{
+    position: relative;
+    left: 20px;
+}
+
+footer{
+    background-color: #18978F;
+    padding: 30px;
+    color: #f7f7f7;
+    display: flex;
+    margin-top: 160px;
+}
+
+footer #social-media{
+    width: 33%;
+    text-align: center;
+    
+}
+
+.sosmed img{
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+footer #social-media h4{
+    padding: 10px 0;
+}
+
+footer ul li a{
+    text-decoration: none;
+}
+footer ul li{
+    list-style-type: none;
+}
+
+footer a{
+    color: #f7f7f7;
+    font-size: 12px
+}
+
+.partner a{
+    position: relative;
+    top: 10px;
+    left: -20px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 575.98px) { 
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        background: var(--Primary, #54BAB9);
+    }
+    
+    /* Navigasi Bar */
+    .logo{
+        position: relative;
+        width: 15%;
+        height: auto;
+        background: var(--Primary, #54BAB9);
+        
+    }
+
+    .navbar {
+        background: var(--Primary, #54BAB9);
+        width: auto;
+        height: 40px; 
+        flex-shrink: 0;
+        color: #FAF9F9;
+        font-size: 8px;
+        line-height: normal;
+        text-transform: uppercase;
+        display: flex;
+    }
+    
+    .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .navbar li {
+        margin-right: 15px;      
+        position: relative;
+        
+    }
+    
+    nav ul li a:hover{
+        background-color: #224F34;
+        color: white;
+        padding: 6px 10px;
+        border-radius: 30px;
+        position: static;
+        margin: -10px;
+    }
+    
+    .iconppl{
+       width: 20px;
+       position: relative;
+       left: -5px;
+    }
+
+    .img-frame {
+        width: 575px;
+    }
+
+    #isi {
+        width: 460px;;
+        height: 1320px;
+        margin: 29px;
+        padding: 29px;
+    }
+
+    h1 {
+        text-align: start;
+        padding-left: 140px;
+        font-size: 22px;
+        top: -5px;
+        padding-bottom: -20px;
+    }
+    
+    .col-3 {
+        text-align: start;
+        padding: 10px 29px;
+        margin-left: 20px;
+        font-size: 12px;
+        font-style: bold;
+        margin-top: 0px;
+        white-space: nowrap;
+        position: relative;
+        top: -30px;
+    }
+    
+    .col-sm-9 {
+        text-align: start;
+        padding: 15px 0px;
+        font-size: 8px;
+        margin-top: -10px;
+        white-space: nowrap;
+       
+    }
+
+    .cta-button {
+        padding: 4px 8px;
+        font-size: 6px;
+        left: -120px;
+        top: -50px;
+    }
+
+    .img-artikel {
+        position: relative;
+        left: 110px;
+        top: -120px;
+        border-radius: 25px;
+        width: 55%;
+    }
+
+    .btn-more {
+        position: relative;
+        display: inline;
+        padding: 4px 8px;
+        font-size: 6px;
+        left: -160px;
+        top: 30px;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #224F34;
+        border-radius: 20px;
+        border: 1px solid; 
+        border-color: #224F34; 
+    }
+
+    .container {
+        padding-left: 10%;
+        padding-top: 20px;
+    }
+
+    #footers {
+        display: flex;
+    }
+    
+    
+    footer {
+        width: 500px;
+        margin-top: 60px;
+    }
+    
+    footer #social-media{
+        width: 13%;
+        text-align: center;
+        
+    }
+
+    footer #social-media h4 {
+        white-space: nowrap;
+        position: relative;
+        top: 30px;
+        left: 143px;
+        
+    }
+
+    .sosmed {
+        display: flex;
+        align-items: center; 
+        position: relative;
+        top: 10px;
+        left: 130px;
+      }
+
+    .sosmed img{
+        width: 20px;
+        margin-left: -15px; 
+    }
+
+    footer .company h4 {
+        position: relative;
+        margin-left: -70px;
+        
+    }
+
+    footer .company li {
+        position: relative;
+        margin-left: -70px;
+        
+    }
+
+    footer .partner {
+        position: relative;
+        margin-left: -70px;
+        
+    }
+    
+    footer h4{
+        padding-left: 40px;
+        font-size: 14px;
+        position: relative;
+        left: 40px;
+    }
+
+    footer ul li a{
+        text-decoration: none;
+        font-size: 8px;
+    }
+
+    footer ul li{
+        list-style-type: none;
+        font-size: 8px;
+    }
+    
+    footer a {
+        color: #f7f7f7;
+        font-size: 8px;
+    }
+    
+    .partner a {
+        position: relative;
+        top: 10px;
+        left: -20px;
+    }
+
+    .logo-footer {
+        width: 120px;
+        position: relative;
+        left: -20px;
+    }
+    
+    .partner img {
+        width: 65px;
+        padding-left: 93px;
+    }
+
+    .company li {
+        position: relative;
+        left: 82px;
+    }
+
+    .daftar-isi li {
+        position: relative;
+        left: 80px;
+    }
+}
+
+/*RESPONSIVE 2*/
+
+@media screen and (max-width: 850px) { 
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        background: var(--Primary, #54BAB9);
+    }
+    
+    /* Navigasi Bar */
+    .logo{
+        position: relative;
+        width: 80px;
+        height: auto;
+        background: var(--Primary, #54BAB9);
+        
+    }
+
+    .navbar {
+        background: var(--Primary, #54BAB9);
+        width: 800px;
+        height: 40px; 
+        flex-shrink: 0;
+        color: #FAF9F9;
+        font-size: 8px;
+        line-height: normal;
+        text-transform: uppercase;
+        display: flex;
+    }
+    
+    .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .navbar li {
+        margin-right: 15px;      
+        position: relative;
+        
+    }
+    
+    nav ul li a:hover{
+        background-color: #224F34;
+        color: white;
+        padding: 6px 10px;
+        border-radius: 30px;
+        position: static;
+        margin: -10px;
+    }
+    
+    .iconppl{
+       width: 20px;
+       position: relative;
+       left: -5px;
+    }
+
+    .img-frame {
+        width: 575px;
+    }
+
+    #isi {
+        width: 460px;;
+        height: 1320px;
+        margin: 29px;
+        padding: 29px;
+    }
+
+    h1 {
+        text-align: start;
+        padding-left: 140px;
+        font-size: 22px;
+        top: -5px;
+        padding-bottom: -20px;
+    }
+    
+    .col-3 {
+        text-align: start;
+        padding: 10px 29px;
+        margin-left: 20px;
+        font-size: 12px;
+        font-style: bold;
+        margin-top: 0px;
+        white-space: nowrap;
+        position: relative;
+        top: -30px;
+    }
+    
+    .col-sm-9 {
+        text-align: start;
+        padding: 15px 0px;
+        font-size: 8px;
+        margin-top: -10px;
+        white-space: nowrap;
+       
+    }
+
+    .cta-button {
+        padding: 4px 8px;
+        font-size: 6px;
+        left: -120px;
+        top: -50px;
+    }
+
+    .img-artikel {
+        position: relative;
+        left: 110px;
+        top: -120px;
+        border-radius: 25px;
+        width: 55%;
+    }
+
+    .btn-more {
+        position: relative;
+        display: inline;
+        padding: 4px 8px;
+        font-size: 6px;
+        left: -160px;
+        top: 30px;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #224F34;
+        border-radius: 20px;
+        border: 1px solid; 
+        border-color: #224F34; 
+    }
+
+    .container {
+        padding-left: 10%;
+        padding-top: 20px;
+    }
+
+    #footers {
+        display: flex;
+    }
+    
+    
+    footer {
+        width: 500px;
+        margin-top: 60px;
+    }
+    
+    footer #social-media{
+        width: 13%;
+        text-align: center;
+        
+    }
+
+    footer #social-media h4 {
+        white-space: nowrap;
+        position: relative;
+        top: 30px;
+        left: 143px;
+        
+    }
+
+    .sosmed {
+        display: flex;
+        align-items: center; 
+        position: relative;
+        top: 10px;
+        left: 130px;
+      }
+
+    .sosmed img{
+        width: 20px;
+        margin-left: -15px; 
+    }
+
+    footer .company h4 {
+        position: relative;
+        margin-left: -70px;
+        
+    }
+
+    footer .company li {
+        position: relative;
+        margin-left: -70px;
+        
+    }
+
+    footer .partner {
+        position: relative;
+        margin-left: -70px;
+        
+    }
+    
+    footer h4{
+        padding-left: 40px;
+        font-size: 14px;
+        position: relative;
+        left: 40px;
+    }
+
+    footer ul li a{
+        text-decoration: none;
+        font-size: 8px;
+    }
+
+    footer ul li{
+        list-style-type: none;
+        font-size: 8px;
+    }
+    
+    footer a {
+        color: #f7f7f7;
+        font-size: 8px;
+    }
+    
+    .partner a {
+        position: relative;
+        top: 10px;
+        left: -20px;
+    }
+
+    .logo-footer {
+        width: 120px;
+        position: relative;
+        left: -20px;
+    }
+    
+    .partner img {
+        width: 65px;
+        padding-left: 93px;
+    }
+
+    .company li {
+        position: relative;
+        left: 82px;
+    }
+
+    .daftar-isi li {
+        position: relative;
+        left: 80px;
+    }
+
+}
+
