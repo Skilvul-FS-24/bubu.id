@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #54BAB9;
+    padding: 4px;
+    transition: .3s;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #54BAB9;
+    z-index: 100;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 12px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#menu-icon {
+    font-size: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+    display: none;
+}
+
+#user {
+    color: #fff;
+    font-size: 24px;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    background-image: url('image/logo5.jpeg');
+    background-size: cover;
+}
+
+.hero-text h1 {
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: #D9D9D9;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 50px;
+}
+
+.content-text {
+    text-align: left;
+}
+
+.content-text p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content-text h1 a {
+    text-decoration: none;
+    color: rgb(35, 67, 35);
+}
+
+.content-img {
+    text-align: center;
+}
+
+.content-img img {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    width: 400px;
+}
+
+.list-content ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.list-content li {
+    margin-bottom: 10px;
+}
+
+.list-content p {
+    margin-bottom: 15px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.account .left {
+    display: flex;
+    align-items: center;
+}
+
+.account .left img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.account .center {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.account .center p {
+    margin: 0;
+}
+
+.account .right {
+    display: flex;
+}
+
+.icon-account a {
+    text-decoration: none;
+    color: #5F6D7E;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #18978F;
+    padding: 30px;
+    color: whitesmoke;
+    display: flex;
+}
+  
+footer #social-media {
+    width: 25%;
+    text-align: center;
+}
+  
+footer #social-media h4 {
+    padding: 10px 0;
+}
+  
+footer ul li a {
+    text-decoration: none;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+  
+#footers {
+    display: flex;
+    gap: 100px;
+}
+  
+footer a {
+    color: whitesmoke;
+    font-size: 14px
+}
+
+.media i {
+    font-size: 28px;
+}
+
+#footers .daftar-isi ul li {
+    margin-top: 5px;
+}
+
+#footers .company ul li {
+    margin-top: 5px;
+}
+
+#footers .partner a img {
+    margin-top: 10px;
+}
+
+@media (max-width: 371px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 16%;
+        left: -100%;
+        width: 100%;
+        background: #54BAB9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: all 0.1s ease;
+    }
+
+    .navbar.active {
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    nav img {
+        width: 150px;
+    }
+
+    #hero {
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 26px;
+    }
+
+    #content {
+        padding: 20px;
+        background: #D9D9D9;
+        text-align: center;
+        max-width: 270px;
+    }
+
+    .content-text {
+        padding: 20px;
+    }
+    
+    .content-img img {
+        width: 100%;
+    }
+
+    .list-content ul {
+        padding-left: 10px;
+    }
+
+    .content-text h1 a {
+        font-size: 16px;
+    }
+    
+    .content-text p {
+        font-size: 14px;
+    }
+    
+    .list-content ul li {
+        font-size: 14px;
+    }
+
+    .account {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .account .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .account .left img {
+        width: 30px;
+    }
+
+    .account .left .name {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .account .right {
+        display: flex;
+        justify-content: center; 
+    }
+
+    .icon-account a {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+
+    footer {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+    
+    #social-media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #social-media img {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+    
+    #social-media h4 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #social-media i {
+        font-size: 18px;
+    }
+    
+    #social-media .media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #social-media .media a {
+        text-decoration: none;
+        font-size: 20px;
+        margin: 0 10px;
+        margin-bottom: 10px;
+    }    
+
+    #footers {
+        gap: 30px;
+    }
+
+    .daftar-isi h4, .company h4, .partner h4 {
+        font-size: 14px;
+    }
+
+    .daftar-isi ul, .company ul, .partner a {
+        font-size: 14px;
+    }
+
+    #link {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .daftar-isi li a {
+        font-size: 14px;
+    }
+
+    .company li a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 462px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 12%;
+        left: -100%;
+        width: 100%;
+        background: #54BAB9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: all 0.2s ease;
+    }
+
+    .navbar.active {
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    nav img {
+        width: 150px;
+    }
+
+    #hero {
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 26px;
+    }
+
+    #content {
+        padding: 20px;
+        background: #D9D9D9;
+        text-align: center;
+        max-width: 350px;
+    }
+
+    .content-text {
+        padding: 20px;
+    }
+
+    .content-img img {
+        width: 100%;
+    }
+
+    .list-content ul {
+        padding-left: 10px;
+    }
+
+    .content-text h1 a {
+        font-size: 16px;
+    }
+
+    .content-text p {
+        font-size: 14px;
+    }
+
+    .list-content ul li {
+        font-size: 14px;
+    }
+
+    .account {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .account .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .account .left img {
+        width: 30px;
+    }
+
+    .account .left .name {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .account .right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon-account a {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #social-media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #social-media img {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+
+    #social-media h4 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #social-media i {
+        font-size: 18px;
+    }
+
+    #social-media .media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #social-media .media a {
+        text-decoration: none;
+        font-size: 20px;
+        margin: 0 10px;
+        margin-bottom: 10px;
+    }
+
+    #footers {
+        gap: 30px;
+    }
+
+    .daftar-isi h4, .company h4, .partner h4 {
+        font-size: 14px;
+    }
+
+    .daftar-isi ul, .company ul, .partner a {
+        font-size: 14px;
+    }
+
+    #link {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .daftar-isi li a {
+        font-size: 14px;
+    }
+
+    .company li a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 15%;
+        left: -100%;
+        width: 100%;
+        background: #54BAB9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: all 0.1s ease;
+    }
+
+    .navbar.active {
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    nav img {
+        width: 150px;
+    }
+
+    #hero {
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 26px;
+    }
+
+    #content {
+        padding: 20px;
+        background: #D9D9D9;
+        text-align: center;
+        max-width: 640px;
+    }
+
+    .content-text {
+        padding: 20px;
+    }
+
+    .content-img img {
+        width: 100%;
+    }
+
+    .list-content ul {
+        padding-left: 10px;
+    }
+
+    .content-text h1 a {
+        font-size: 16px;
+    }
+
+    .content-text p {
+        font-size: 14px;
+    }
+
+    .list-content ul li {
+        font-size: 14px;
+    }
+
+    .account {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .account .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .account .left img {
+        width: 30px;
+    }
+
+    .account .left .name {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .account .right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon-account a {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+
+    footer {
+        align-items: center;
+        text-align: center;
+    }
+
+    #social-media img {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+
+    #social-media .media i {
+        text-decoration: none;
+        font-size: 20px;
+        margin: 0 10px;
+    }
+}
