@@ -23,8 +23,8 @@ btnSubmit.addEventListener("click", async (event) => {
         });
 
         if (found) {
-            window.location.href = "landing-page.html"
-            localStorage.setItem("token", found.id)
+            window.location.href = "index.html"
+            localStorage.setItem("user", JSON.stringify(found))
         }else {
             return alert.innerHTML += popup
         }
