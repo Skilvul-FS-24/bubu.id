@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubu.id</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid" style="background-color: #54bab9">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://i.postimg.cc/KcQLvFTS/Black-White-Minimalist-SImple-Monogram-Typography-Logo.png"
+            alt=""
+            width="150"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav gap-3 me-5">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">About Bullying</a>
+            <a class="nav-link" href="#">Konseling</a>
+            <a class="nav-link" href="list-artikel.html">Artikel</a>
+            <a class="nav-link" href="#">Forum</a>
+            <a class="nav-link" href="#">About Us</a>
+          </div>
+          <div class="navbar-button">
+            <button class="btn border-1 border-white me-2" type="button">
+              Daftar
+            </button>
+            <button class="btn border-1 border-white me-2" type="button">
+              Masuk
+            </button>
+            <i class="bx bx-user-circle" id="user" hidden></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- HeroPage -->
+    <div id="hero" class="container-fluid d-flex">
+      <div
+        class="row align-items-center justify-content-sm-between text-white"
+        style="background-color: #54bab9"
+      >
+        <div class="col-sm-5 ps-5">
+          <h1 class="text-center fw-bolder">Say No To Bullying</h1>
+          <p id="description">
+            Bubu.id adalah website yang mendukung gerakan anti-bullying,
+            terutama di dunia pendidikan yang menyediakan fitur dan layanan yang
+            terbaik. #BullyingBusters
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="https://i.postimg.cc/FscnCNHS/Mask-group.png"
+            alt=""
+            width="250px"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- End HeroPage -->
+
+    <!-- Misi -->
+    <div class="container">
+      <section
+        id="misi"
+        class="row mt-5 pb-5 align-items-center justify-content-around"
+      >
+        <div class="col-md-6 misi-img">
+          <img
+            src="https://i.postimg.cc/90DBv55s/Pexels-Photo-by-Alfin-Auzikri.png"
+            alt=""
+            class="img-fluid"
+            width="300px"
+          />
+        </div>
+        <div class="col-md-6 misi-text text-center p-3">
+          <h4>Misi Kami</h4>
+          <p>
+            Melalui program yang kami kelola, Bubu.id didedikasikan untuk
+            mengurangi kasus Bullying di Indonesia, khususnya di dunia
+            pendidikan
+          </p>
+          <button><a href="#" class="">Learn More</a></button>
+        </div>
+      </section>
+    </div>
+    <!-- Misi -->
+
+    <!-- About Bullying -->
+    <div class="container-fluid">
+      <section
+        id="about-bullying"
+        class="row mt-5 justify-content-center align-items-center"
+      >
+        <div class="col-md-6 about-bullying-text">
+          <h4>About Bullying</h4>
+          <p>
+            Bullying adalah penggunaan kekerasan, ancaman, atau paksaan untuk
+            menyalahgunakan atau mengintimidasi orang lain. Perilaku ini dapat
+            menjadi suatu kebiasaan dan melibatkan ketidakseimbangan kekuasaan
+            sosial atau fisik.
+          </p>
+          <button><a href="#" class="">Learn More</a></button>
+        </div>
+        <div class="col-md-6 about-bullying-img text-end">
+          <img
+            src="https://i.postimg.cc/KYWxP03c/image-3.png"
+            alt=""
+            class="img-fluid"
+            width="250px"
+          />
+        </div>
+      </section>
+    </div>
+    <!-- End About Bullying -->
+
+    <!-- Fitur -->
+    <div class="container-fluid m-0 p-0">
+      <section id="fitur">
+        <div class="fitur-text text-center mt-4">
+          <h3>Fitur Kami</h3>
+        </div>
+        <div class="row mt-4 fitur-content">
+          <div class="col-md-4">
+            <div class="fitur-contents">
+              <ul>
+                <li>Konseling</li>
+              </ul>
+              <h4>Tersedia Konseling Online & Offline</h4>
+              <p>
+                Kamu bisa memilih waktu konseling, yang disesuaikan dengan
+                kenyamananmu bercerita.
+              </p>
+              <button><a href="#" class="">Learn More</a></button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="fitur-contents">
+              <ul>
+                <li>Artikel</li>
+              </ul>
+              <h4>Tersedia artikel yang beragam</h4>
+              <p>
+                Kamu dapat meningkatkan pengetahuan tentang informasi mengenai
+                bullying, baik itu cara mencegahnya, dampak dan akibatnya.
+              </p>
+              <button><a href="#" class="">Learn More</a></button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="fitur-contents">
+              <ul>
+                <li>Forum</li>
+              </ul>
+              <h4>Forum Diskusi</h4>
+              <p>
+                Forum diskusi untuk user yang menghadapi masalah bullying dapat
+                berbagi pengalaman mereka & mendapat dukungan dari sesama, untuk
+                mengatasi situasi bullying.
+              </p>
+              <button><a href="#" class="">Learn More</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- End Fitur -->
+    <!-- Feedback -->
+    <div class="container-fluid" id="feedback">
+      <section class="">
+        <div class="feedback-text text-center">
+          <h3>Feedback Corner</h3>
+        </div>
+        <div class="row mt-4 p-4 justify-content-around">
+          <div class="col-md-4 feedback-comments">
+            <img src="https://i.postimg.cc/qM3rR01R/image.png" alt="" />
+            <h4>Emily Wilson</h4>
+            <p>
+              The customer experience was exceptional from start to finish. The
+              website is user-friendly, the checkout process was smooth, and the
+              clothes I ordered fit perfectly. I'm beyond satisfied!
+            </p>
+          </div>
+          <div class="col-md-4 feedback-comments">
+            <img src="https://i.postimg.cc/qM3rR01R/image.png" alt="" />
+            <h4>Sarah Thompson</h4>
+            <p>
+              I absolutely love the quality and style of the clothing I
+              purchased from this website. Customer service was outstanding, and
+              I received my order quickly. Highly recommended!
+            </p>
+          </div>
+          <div class="col-md-4 feedback-comments">
+            <img src="https://i.postimg.cc/qM3rR01R/image.png" alt="" />
+            <h4>Olivia Martinez</h4>
+            <p>
+              I had a great experience shopping on this website. The clothes I
+              bought are fashionable and comfortable. Highly satisfied!
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- End Feedback -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center" id="social-media">
+            <img
+              src="https://i.postimg.cc/y6mtg6v1/Logo-1.png"
+              alt=""
+              width="200px"
+            />
+            <h4>Social Media</h4>
+            <div class="media">
+              <a href="#"
+                ><img
+                  src="https://i.postimg.cc/FHy4hb8Z/Facebook.png"
+                  alt="Facebook"
+                  width="30px"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://i.postimg.cc/JhdmFr9V/Twitter.png"
+                  alt="Twitter"
+                  width="30px"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://i.postimg.cc/yYzKtrrd/Instagram.png"
+                  alt="Instagram"
+                  width="30px"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-4" id="footers">
+            <div class="daftar-isi">
+              <h4>Daftar</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-bullying">About Bullying</a></li>
+                <li><a href="#">Konseling</a></li>
+                <li><a href="#">Artikel</a></li>
+                <li><a href="#">Forum</a></li>
+              </ul>
+            </div>
+            <div class="company">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+              </ul>
+            </div>
+            <div class="partner">
+              <h4>Partner</h4>
+              <a href="https://skilvul.com" target="_blank" id="link"
+                ><img
+                  src="https://i.postimg.cc/rstgGjLR/image-11.png"
+                  alt=""
+                  width="100px"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- End Footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
