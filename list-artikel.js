@@ -29,7 +29,7 @@ async function getArtikel() {
 getArtikel();
 
 btnLogout.addEventListener("click", function () {
-  localStorage.removeItem("user")
+  localStorage.removeItem("user");
   alert("Anda berhasil logout!");
-  window.location.href = "index.html"
+  window.location.href = "index.html";
 });
