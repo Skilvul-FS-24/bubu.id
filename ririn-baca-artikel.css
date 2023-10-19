@@ -91,9 +91,17 @@ nav ul li {
     text-align: left;
 }
 
+.content-text h1{
+    text-align: center;
+}
+
 .content-text p {
     margin-top: 20px;
     margin-bottom: 20px;
+    line-height: 2;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-indent: 0.5in;
 }
 
 .content-text h1 a {
