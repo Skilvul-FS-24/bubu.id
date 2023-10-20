@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins' !important;
+    background-color: #54BAB9 !important;
+}
+
+.login-fitur a{
+    color: black;
+}
+
+
+@media (max-width: 575.98px) { 
+    .login-fitur p{
+        font-size: 12px;
+    }
+    #login {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 850px){
+    
+    #login img{
+        width: 200px;
+    }
+}
